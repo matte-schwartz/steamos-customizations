@@ -1,0 +1,2 @@
+# Disable wakeup for AT Translated Set 2 keyboard (volume keys) via i8042 serio device
+SUBSYSTEM=="serio", ATTRS{firmware_id}=="PNP: PNP0303", ATTR{power/wakeup}="disabled"
